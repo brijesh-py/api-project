@@ -63,7 +63,7 @@ const RandomUser = () => {
         registered={userData?.registered?.date || " "}
       />
       <div className="text-center">
-        <a href="" className="block mx-auto mt-12 text-white text-xs">
+        <a href="https://chaicode.com" className="block mx-auto mt-12 text-white text-xs">
           @ chai aur code
         </a>
       </div>

@@ -11,11 +11,11 @@ import CatsListingPage from "./pages/CatsListingPage";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
-    <Route key={1} path="/" element={<Layout />}>
-      <Route key={2} path="/" element={<Navigate to="random-user" replace />} />
-      <Route key={3} path="random-user" element={<RandomUserPage />} />
-      <Route key={4} path="random-jokes" element={<RandomJokesPage />} />
-      <Route key={5} path="cats-listing" element={<CatsListingPage />} />
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Navigate to="random-user" replace />} />
+      <Route path="/random-user" element={<RandomUserPage />} />
+      <Route path="/random-jokes" element={<RandomJokesPage />} />
+      <Route path="/cats-listing" element={<CatsListingPage />} />
     </Route>
   )
 );
