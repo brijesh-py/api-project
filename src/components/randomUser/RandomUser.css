@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Donegal+One&family=Playfair+Display:ital,wght@0,500;1,500&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.font-donegal {
+  font-family: "Donegal One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-playfair {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
