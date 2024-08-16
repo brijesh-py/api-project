@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between px-10">
       <h2 className="text-4xl text-white font-sans font-bold">Cats around us</h2>
       <a href="https://chaicode.com" target="_blank">
         <img
