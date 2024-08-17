@@ -2,11 +2,18 @@ import PropTypes from "prop-types";
 
 const Card = ({ catData }) => {
   return (
-    <div className="w-[360px] mx-5 bg-white rounded-lg overflow-hidden">
-      <img className="w-full h-[200px]" src={catData?.image || ""} alt="" />
+    <div className=" w-60 sm:w-[360px] mx-2 sm:mx-5 bg-white rounded-lg overflow-hidden">
+      <img
+        loading="lazy"
+        className="w-full h-[200px]"
+        src={catData?.image || ""}
+        alt={catData?.name || ""}
+      />
       <div className="space-y-1 p-3">
         <h2 className="text-3xl">{catData?.name || ""}</h2>
-        <p className="leading-6 max-h-[90px] overflow-hidden">{catData?.description || ""}</p>
+        <p className="leading-6 max-h-[90px] overflow-hidden">
+          {catData?.description || ""}
+        </p>
         <div className="flex items-center space-x-6">
           <b className="block text-sm italic">Origin</b>
           <span>{catData?.origin || ""}</span>
